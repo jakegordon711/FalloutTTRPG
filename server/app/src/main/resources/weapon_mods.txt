@@ -1,0 +1,268 @@
+Name|Armor Type|Type|Physical DR|Energy DR|Radiation DR|Other Effects|Weight|Cost|Perks|Skill
+
+****** CLOTHING ******
+Ballistic Weave +2 Physical damage resistance, +2 Energy damage resistance – +20 –
+Ballistic Weave Mk II +3 Physical damage resistance, +3 Energy damage resistance – +30 Armorer 1
+Ballistic Weave Mk III +4 Physical damage resistance, +4 Energy damage resistance – +40 Armorer 2
+Ballistic Weave Mk IV +5 Physical damage resistance, +5 Energy damage resistance – +50 Armorer 3
+Ballistic Weave Mk V +6 Physical damage resistance, +6 Energy damage resistance – +60 Armorer 4
+
+****** VAULT SUIT ******
+Insulated Lining +1 Energy damage resistance – +10 –
+Treated Lining +1 Energy damage resistance, +1 Radiation damage resistance +1 +20 Armorer 2
+Resistant Lining +2 Energy damage resistance, +1 Radiation damage resistance +1 +30 Armorer 3
+Protective Lining +2 Energy damage resistance, +2 Radiation damage resistance +1 +40 Armorer 4, Science! 2
+Shielded Lining +3 Energy damage resistance, +3 Radiation damage resistance +1 +50 Armorer 4, Science! 4
+
+****** RAIDER ARMOR ******
+Welded +1 +1 – – +1 +3 –
+Tempered +2 +2 – – +1 +6 –
+Hardened +3 +3 – – +2 +9 Armorer 1
+Buttressed +4 +4 – – +3 +12 Armorer 1
+
+****** LEATHER ARMOR ******
+Boiled Leather +1 +1 – – +1 +5 –
+Girded Leather +2 +2 – – +1 +10 –
+Treated Leather +3 +3 – – +1 +15 Armorer 1
+Shadowed Leather +3 +3 – Shadowed (see sidebar) +1 +20 Armorer 1
+Studded Leather +4 +4 – – +2 +25 Armorer 1
+
+****** METAL ARMOR ******
+Painted Metal +1 +1 – – +1 +10 –
+Enameled Metal +2 +2 – – +2 +20 Armorer 1
+Shadowed Metal +2 +2 – Shadowed (see sidebar) +2 +25 Armorer 1
+Alloyed Metal +3 +3 – – +3 +30 Armorer 1
+Polished Metal +4 +4 – – +4 +40 Armorer 2
+
+****** COMBAT ARMOR ******
+Reinforced +1 +1 – – +1 +15 –
+Shadowed +1 +1 – Shadowed (see sidebar) +1 +15 Armorer 1
+Fiberglass +2 +2 – – +1 +30 Armorer 1
+Polymer +3 +3 – – +2 +45 Armorer 1
+
+****** SYNTH ARMOR ******
+Laminated +1 +1 – – +1 +5 –
+Resin +2 +2 – – +1 +10 Armorer 1
+Microcarbon +3 +3 – – +2 +15 Armorer 1
+Nanofilament +4 +4 – – +3 +20 Armorer 1
+
+
+****** GENERAL ARMOR ******
+-- ALL --
+Lighter Build – – – – -1 +1 –
+Pocketed – – – +10 Carry Weight +1 +1 Armorer 1
+Deep Pocketed – – – +20 Carry Weight +2 +5 Armorer 1
+Lead Lined – – +3 – +2 +5 Armorer 4, Science! 1
+Ultra-Light Build – – – – -3 +7 Armorer 3
+
+-- TORSO --
+Padded – – – +2 to all damage resistances vs Blast weapons +4 +1 –
+Asbestos Lining – +3 – Ignore Energy damage from the Persistent damage effect +4 +3 Armorer 1
+Dense – – – +4 to all Damage Resistances vs Blast weapons +4 +7 Armorer 3
+BioCommMesh – – – Chems last twice as long (see p.164) +2 +9 Armorer 4, Science! 2
+Pneumatic – – – Stun damage effect requires 2+ Effects to be rolled to affect you +2 +9 Armorer 4
+
+-- ARMS --
+Brawling – – – Unarmed attacks inflict +1 DC damage +1 +1 Armorer 1
+Braced – – – +2 to all damage resistances vs melee attacks. +1 +1 Armorer 1
+Stabilized – – – When you aim and make a ranged attack, +1 DC to the attack’s damage +1 +1 Armorer 2
+Aerodynamic – – – May spend up to 4 AP on bonus damage for melee attacks – +1 Armorer 3
+Weighted – – – Melee and Unarmed attacks gain Piercing 1 +1 +3 Armorer 4
+
+-- LEGS -- 
+Cushioned – – – +2 to Physical damage resistance vs falling damage – +1 Armorer 1
+Muffled – – – Re-roll 1d20 on Stealth tests – +2 Armorer 2
+
+
+-- RAIDER PA --
+Raider II Helm +1 – – +3 Head +1 +5 Armorer 1
+Raider II Chest Piece +1 – – +4 Torso +2 +10 Armorer 1
+Raider II Arm +1 – – +3 Arm +2 +7 Armorer 1
+Raider II Leg +1 – – +3 Leg +2 +7 Armorer 1
+
+Welded Rebar Enemies who attack you with a melee or unarmed attack and suffer a complication suffer 2 DC damage Torso +2 +25 Armorer 1
+
+-- T45 PA --
+T-45b Helm – – – +1 Head +1 +3 Armorer 1
+T-45b Chest Piece – – – +1 Torso +1 +7 Armorer 1
+T-45b Arm +1 +1 – +1 Arm +1 +7 Armorer 1
+T-45b Leg +1 +1 – +1 Leg +1 +7 Armorer 1
+T-45c Helm +1 +1 – +2 Head +1 +6 Armorer 2
+T-45c Chest Piece – – – +4 Torso +2 +14 Armorer 2
+T-45c Arm +2 +2 – +2 Arm +2 +10 Armorer 2
+T-45c Leg +2 +2 – +2 Leg +2 +10 Armorer 2
+T-45d Helm +1 +1 – +3 Head +2 +9 Armorer 2, Science! 1
+T-45d Chest Piece +1 +1 – +5 Torso +3 +21 Armorer 2, Science! 1
+T-45d Arm +2 +3 – +3 Arm +2 +15 Armorer 2, Science! 1
+T-45d Leg +2 +3 – +3 Leg +2 +15 Armorer 2, Science! 1
+T-45e Helm +1 +2 – +3 Head +2 +12 Armorer 3, Science! 1
+T-45e Chest Piece +1 +1 – +7 Torso +4 +28 Armorer 3, Science! 1
+T-45e Arm +3 +3 – +3 Arm +3 +20 Armorer 3, Science! 1
+T-45e Leg +3 +3 – +3 Leg +3 +20 Armorer 3, Science! 1
+T-45f Helm +2 +2 – +4 Head +3 +15 Armorer 3, Science! 2
+T-45f Chest Piece +1 +1 – +8 Torso +5 +35 Armorer 3, Science! 2
+T-45f Arm +3 +4 – +4 Arm +4 +25 Armorer 3, Science! 2
+T-45f Leg +3 +4 – +4 Leg +4 +25 Armorer 3, Science! 2
+
+-- T51 --
+T-51b Helm – – – +1 Head +1 +4 Armorer 1
+T-51b Chest Piece +1 – – +1 Torso +1 +9 Armorer 1
+T-51b Arm – – – +1 Arm +1 +6 Armorer 1
+T-51b Leg – – – +1 Leg +1 +6 Armorer 1
+T-51c Helm – +1 – +1 Head +1 +8 Armorer 2
+T-51c Chest Piece +1 +1 – +3 Torso +2 +18 Armorer 2
+T-51c Arm +1 +1 – +1 Arm +2 +13 Armorer 2
+T-51c Leg +1 +1 – +1 Leg +2 +13 Armorer 2
+T-51d Helm +1 +1 – +2 Head +2 +12 Armorer 2, Science! 1
+T-51d Chest Piece +1 +1 – +4 Torso +3 +27 Armorer 2, Science! 1
+T-51d Arm +1 +1 – +2 Arm +2 +19 Armorer 2, Science! 1
+T-51d Leg +1 +1 – +2 Leg +2 +19 Armorer 2, Science! 1
+T-51e Helm +1 +1 – +3 Head +2 +16 Armorer 3, Science! 1
+T-51e Chest Piece +2 +1 – +6 Torso +4 +36 Armorer 3, Science! 1
+T-51e Arm +1 +2 – +3 Arm +3 +26 Armorer 3, Science! 1
+T-51e Leg +1 +2 – +3 Leg +3 +26 Armorer 3, Science! 1
+T-51f Helm +1 +2 – +3 Head +3 +20 Armorer 3, Science! 2
+T-51f Chest Piece +2 +2 – +7 Torso +5 +45 Armorer 3, Science! 2
+T-51f Arm +2 +2 – +3 Arm +4 +32 Armorer 3, Science! 2
+T-51f Leg +2 +2 – +3 Leg +4 +32 Armorer 3, Science! 2
+
+-- T60 PA --
+T-60b Helm +1 +1 – +1 Head +1 +32 –
+T-60b Chest Piece – – – +2 Torso +1 +37 –
+T-60b Arm +1 +1 – +1 Arm +1 +35 –
+T-60b Leg +1 +1 – +1 Leg +1 +35 –
+T-60c Helm +1 +1 – +2 Head +3 +64 Armorer 1, Science! 1
+T-60c Chest Piece +1 – – +3 Torso +2 +74 Armorer 1, Science! 1
+T-60c Arm +1 +1 – +2 Arm +2 +70 Armorer 1, Science! 1
+T-60c Leg +1 +1 – +2 Leg +2 +70 Armorer 1, Science! 1
+T-60d Helm +1 +2 – +2 Head +2 +96 Armorer 2, Science! 1
+T-60d Chest Piece +1 +1 – +5 Torso +3 +111 Armorer 2, Science! 1
+T-60d Arm +1 +2 – +2 Arm +2 +105 Armorer 2, Science! 1
+T-60d Leg +1 +2 – +2 Leg +2 +105 Armorer 2, Science! 1
+T-60e Helm +2 +2 – +3 Head +2 +128 Armorer 3, Science! 1
+T-60e Chest Piece +1 +1 – +7 Torso +4 +148 Armorer 3, Science! 1
+T-60e Arm +2 +2 – +3 Arm +3 +140 Armorer 3, Science! 1
+T-60e Leg +2 +2 – +3 Leg +3 +140 Armorer 3, Science! 1
+T-60f Helm +2 +3 – +4 Head +3 +160 Armorer 3, Science! 2
+T-60f Chest Piece +2 +1 – +8 Torso +5 +185 Armorer 3, Science! 2
+T-60f Arm +2 +3 – +4 Arm +4 +175 Armorer 3, Science! 2
+T-60f Leg +2 +3 – +4 Leg +4 +175 Armorer 3, Science! 2
+
+-- X01 PA --
+Mk II Helm – – – +1 Head +1 +7 –
+Mk II Chest Piece – – – +1 Torso +1 +14 –
+Mk II Arm +1 +1 – – Arm +1 +10 –
+Mk II Leg +1 +1 – – Leg +1 +10 –
+Mk III Helm +1 – – +1 Head +1 +14 Armorer 1, Science! 1
+Mk III Chest Piece – +1 – +2 Torso +2 +28 Armorer 1, Science! 1
+Mk III Arm +1 +1 – +1 Arm +2 +20 Armorer 1, Science! 1
+Mk III Leg +1 +1 – +1 Leg +2 +20 Armorer 1, Science! 1
+Mk IV Helm +1 +1 – +2 Head +2 +21 Armorer 2. Science! 1
+Mk IV Chest Piece +1 +1 – +3 Torso +3 +42 Armorer 2. Science! 1
+Mk IV Arm +1 +1 – +2 Arm +2 +30 Armorer 2. Science! 1
+Mk IV Leg +1 +1 – +2 Leg +2 +30 Armorer 2. Science! 1
+Mk V Helm +2 +1 – +2 Head +2 +28 Armorer 3. Science! 1
+Mk V Chest Piece +1 +2 – +4 Torso +4 +56 Armorer 3. Science! 1
+Mk V Arm +2 +2 – +2 Arm +3 +40 Armorer 3. Science! 1
+Mk V Leg +2 +2 – +2 Leg +3 +40 Armorer 3. Science! 1
+Mk VI Helm +2 +2 – +3 Head +3 +35 Armorer 3. Science! 2
+Mk VI Chest Piece +2 +2 – +5 Torso +5 +70 Armorer 3. Science! 2
+Mk VI Arm +2 +3 – +4 Arm +4 +50 Armorer 3. Science! 2
+Mk VI Leg +2 +3 – +4 Leg +4 +50 Armorer 3. Science! 2
+
+EMP Shielding +2 Energy damage resistance Any +1 +20 Armorer 1
+
+-- GENERAL PA --
+
+/System Mods/
+Rad Scrubber Ignore radiation from Irradiated food or drink consumed while armor is powered Head +1 +100 Science! 2 Science Sensor Array Re-roll 1d20 on all PER tests while armor is powered Head +1 +100 Science! 3 Science
+
+Targeting HUD When you take the Aim minor action, you may take a second minor action for 0 AP while armor is powered Head +1 +100 Science! 3 Science
+
+Internal Database Re-roll 1d20 on all INT tests while armor is powered Head +1 +100 Science! 2 Science
+Welded Rebar (Raider only) Enemies who attack you with a melee or unarmed attack and suffer a complication suffer 2 DC damage Torso +2 +25 Armorer 1 Repair
+
+Core Assembly While armor is powered, if you begin your turn and there is no AP in the group pool, add +1 AP Torso +2 +100 Science! 3 Science
+
+Blood Cleanser Re-roll addiction roll for addictive chems while armor is powered Torso +2 +100 Science! 1 Science
+
+Emergency Protocols While armor is powered, if your current HP is below 1/4 of your maximum, add +1 to Defense and +3 to all damage resistances Torso +2 +100 Science! 4 Science
+
+Motion-Assist Servos Increase STR of armor frame to 13 while armor is powered Torso +2 +100 Science! 3 Science
+
+Kinetic Dynamo While armor is powered, when you suffer any damage (after reductions for damage resistances), add +1 to the group AP pool Torso +2 +100 Science! 4 Science
+
+Medic Pump While armor is powered, when your HP are reduced to below 1/2 of your maximum, you immediately use a Stimpak, regaining 3 HP or treating one Injury. Torso +2 +100 Science! 4 Science
+
+Reactive Plates While armor is powered, when you suffer damage from a melee or unarmed attack, you inflict Physical damage back to the attacker equal to half the damage total rolled Torso +2 +100 Armorer 4 Repair
+
+Tesla Coils While armor is powered, whenever an enemy makes a melee attack against you, they suffer 4 DC Energy damage Torso +2 +100 Science! 3 Science
+
+Stealth Boy You may activate a Stealth Boy (p.171) once per scene by spending 1 charge Torso +1 +100 Science! 4 Science
+
+Jetpack When you move you may activate a jetpack by spending 1 charge; this allows you to move one additional zone (horizontally or vertically) or gain enough height for an impact landing Torso +1 +500 Armorer 4, Science! 4 Repair
+
+Rusty Knuckles Your unarmed attacks gain the Persistent damage effect Arm +1 +50 Blacksmith 1 Repair
+
+Hydraulic Bracers While armor is powered, your unarmed attacks inflict +2 DC damage Arm +1 +100 Blacksmith 3 Repair 
+
+Optimized Bracers While armor is powered, you may spend up to 4 AP on bonus damage for melee attacks Arm +1 +100 Blacksmith 1 Repair
+
+Tesla Bracers While armor is powered, your unarmed attacks inflict +2 DC damage and now inflict Energy damage Arm +1 +150 Blacksmith 3, Science! 1 Repair
+
+Calibrated Shocks Your carry weight is increased by +50 Leg +1 +100 Science! 2 Science
+
+Explosive Vent While the armor is powered, when you land from a height, you inflict 4 DC damage to all creatures and damageable objects within Close range Leg +1 +100 Science! 3 Science
+
+Overdrive Servos While armor is powered, when you Sprint, you may spend +2 AP to move one additional zone Leg +1 +100 Science! 3 Science
+
+/PLATING MODS/
+Titanium Plating +1 HP to Armor Piece (+2 to Torso) Any 1 10 Armorer 3 Repair
+
+Lead Plating +2 Radiation damage resistance Any 2 10 Armorer 1 Repair
+
+Photovoltaic Plating +1 AP at the start of a scene if in direct sunlight (only applies once) Any 1 10 Science! 3 Science
+
+Winterized Coating +1 Energy damage resistance Any 1 10 Armorer 1 Repair
+
+Prism Shielding +3 Energy damage resistance Any 2 10 Science! 2 Science
+
+Explosive Shielding +2 to all damage resistances vs Blast weapons. Any 1 10 Science! 1 Science
+
+****** ROBOT MODS ******
+Standard Plating 2 0 All – – –
+Mister Gutsy Plating 2 2 All -10 – –
+Factory Armor +1 +1 Optics – 10 –
+Factory Armor +1 +1 Main Body – 20 –
+Factory Armor +1 +1 Arms – 10 –
+Factory Armor +1 +1 Thruster – 10 –
+Factory Storage Armor +1 +1 Main Body +20 25 Armorer 1
+Primal Plate +2 – Optics -10 10 –
+Primal Plate +2 – Main Body -20 20 –
+Primal Plate +2 – Arms -10 10 –
+Primal Plate +2 – Thruster -10 10 –
+Serrated Plate +2 – Optics -10 15 Armorer 1
+Serrated Plate +2 – Main Body -20 30 Armorer 1
+Serrated Plate +2 – Arms -10 15 Armorer 1
+Serrated Plate +2 – Thruster -10 15 Armorer 1
+Noxious Plate +2 – Optics -10 15 Armorer 1
+Noxious Plate +2 – Main Body -20 30 Armorer 1
+Noxious Plate +2 – Arms -10 15 Armorer 1
+Noxious Plate +2 – Thruster -10 15 Armorer 1
+Toxic Plate +2 – Optics -10 15 Armorer 3
+Toxic Plate +2 – Main Body -20 30 Armorer 3
+Toxic Plate +2 – Arms -10 15 Armorer 3
+Toxic Plate +2 – Thruster -10 15 Armorer 3
+Actuated Frame +1 +1 Optics +10 15 –
+Actuated Frame +1 +1 Main Body +20 30 –
+Actuated Frame +1 +1 Arms +10 15 –
+
+Actuated Frame +1 +1 Thruster +10 15 –
+Voltaic Frame +2 +2 Optics +10 20 Armorer 2
+Voltaic Frame +2 +2 Main Body +20 40 Armorer 2
+Voltaic Frame +2 +2 Arms +10 20 Armorer 2
+Voltaic Frame +2 +2 Thruster +10 20 Armorer 2
+Hydraulic Frame +3 +3 Optics +5 30 Armorer 3
+Hydraulic Frame +3 +3 Main Body +10 60 Armorer 3
+Hydraulic Frame +3 +3 Arms +5 30 Armorer 3
+Hydraulic Frame +3 +3 Thruster +5 30 Armorer 3

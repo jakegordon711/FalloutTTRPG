@@ -20,6 +20,7 @@ dependencies {
     // This dependency is used by the application.
     implementation libs.guava
     implementation 'org.xerial:sqlite-jdbc:3.50.3.0'
+    implementation 'org.apache.poi:poi-ooxml:5.4.1'
 }
 
 testing {
@@ -30,6 +31,11 @@ testing {
             useJUnit('4.13.2')
         }
     }
+}
+
+tasks.withType(JavaCompile) {
+    options.debug = true
+    options.compilerArgs << "-g:source,lines,vars"
 }
 
 // Apply a specific Java toolchain to ease working on different environments.

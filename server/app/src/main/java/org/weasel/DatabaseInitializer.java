@@ -1,7 +1,7 @@
 package org.weasel;
 
 /*
- * Used to initalize the database schema as intended by the fallout guide and will be updated as so
+ * Used to initalize the database schema as INTEGERended by the fallout guide and will be updated as so
 */
 
 import java.sql.Connection;
@@ -9,17 +9,17 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class DatabaseInitalizer{
+public class DatabaseInitializer{
 
     private String databaseDrive = "jdbc:sqlite";
     private String dbName = "fallout_ttrpg";
 
-    public DatabaseInitalizer(){
+    public DatabaseInitializer(){
         databaseDrive = databaseDrive.concat(":"+dbName+".db");
         initalizeDatabase();
     }
 
-    public DatabaseInitalizer(String dbName){
+    public DatabaseInitializer(String dbName){
         this.dbName = dbName; //Needs saved to a config file to allow reusing
         databaseDrive = databaseDrive.concat(":"+dbName+".db");
         initalizeDatabase();
@@ -28,121 +28,62 @@ public class DatabaseInitalizer{
     private void initalizeDatabase(){
         try(Connection conn = DriverManager.getConnection(databaseDrive)){
             System.out.println("Database has been created: "+dbName);
-            createPerkTable(conn);
-            createAmmoTable(conn);
-            createWeaponTable(conn);
-            createWeaponModTable(conn);
-            createApparelTable(conn);
-            createApparelModTable(conn);
-            createArmourLocationTable(conn);
-            createAidTable(conn);
-            createChemTable(conn);
-            createMiscTable(conn);
-            createEffectTable(conn);
+            // createPerkTable(conn);
+            // createAmmoTable(conn);
+            // createWeaponTable(conn);
+            // createWeaponModTable(conn);
+            // createApparelTable(conn);
+            // createApparelModTable(conn);
+            // createArmourLocationTable(conn);
+            // createAidTable(conn);
+            // createChemTable(conn);
+            // createMiscTable(conn);
+            // createEffectTable(conn);
 
-            //Create m2m tables
-            createWeaponEffectTable(conn);
-            createWeaponModEffectTable(conn);
-            createApparelEffectTable(conn);
-            createApparelModEffectTable(conn);
-            createArmourLocationApparelTable(conn);
-            createAidEffectTable(conn);
-            createChemEffectTable(conn);
-            createMiscEffectTable(conn);
+            // //Create m2m tables
+            // createWeaponEffectTable(conn);
+            // createWeaponModEffectTable(conn);
+            // createApparelEffectTable(conn);
+            // createApparelModEffectTable(conn);
+            // createArmourLocationApparelTable(conn);
+            // createAidEffectTable(conn);
+            // createChemEffectTable(conn);
+            // createMiscEffectTable(conn);
 
+            new PerkInitializer(conn);
+            new AmmoInitalizer(conn);
+            new WeaponInitializer(conn);
+            new ApparelInitializer(conn);
+            new WeaponModInitializer(conn);
         }catch(SQLException e){
             System.out.println("An exception has occured connecting to the database "+databaseDrive+"\nSQL state: "+e.getSQLState()+"\nError Code: "+e.getErrorCode()+"\nMessage: "+e.getMessage());
         }
     }
 
-    private void createPerkTable(Connection conn){
-        String query = """
-                CREATE TABLE Perk (
-                    perkId int AUTO_INCREMENT PRIMARY KEY,
-                    name VARCHAR(255),
-                    effect VARCHAR(1600)
-                );
-                """;
-        executeQuery(conn, query, "Error creating the Perk table");
-    }
-
     private void createAmmoTable(Connection conn){
         String query = """
                 CREATE TABLE Ammo (
-                    ammoId int AUTO_INCREMENT PRIMARY KEY,
+                    ammoId INTEGER PRIMARY KEY AUTOINCREMENT,
                     name VARCHAR(255),
-                    weight int,
-                    cost int,
-                    rarity int
+                    weight INTEGER,
+                    cost INTEGER,
+                    rarity INTEGER
                 );
                 """;
         executeQuery(conn, query, "Error creating the Ammo table");
     }
 
-    private void createWeaponTable(Connection conn){
-        String query = """
-                CREATE TABLE Weapon (
-                    ammoId int NOT NULL,
-                    weaponId int AUTO_INCREMENT PRIMARY KEY,
-                    name VARCHAR(255),
-                    type VARCHAR(255),
-                    damage VARCHAR(255),
-                    damageType VARCHAR(255),
-                    fireRate int,
-                    range VARCHAR(255),
-                    weight int,
-                    cost int,
-                    rarity int,
-                    FOREIGN KEY (ammoId) REFERENCES Ammo (ammoId)
-                );
-                """;
-        executeQuery(conn, query, "Error creating the Weapon table");
-    }
-
-    private void createWeaponModTable(Connection conn){
-        String query = """
-                CREATE TABLE WeaponMod (
-                    perkId int NOT NULL,
-                    weaponModId int AUTO_INCREMENT PRIMARY KEY,
-                    name VARCHAR(255),
-                    namePrefix VARCHAR(255),
-                    weight int,
-                    cost int,
-                    FOREIGN KEY (perkId) REFERENCES Perk (perkId)
-                );
-                """;
-        executeQuery(conn, query, "Error creating the WeaponMod table");
-    }
-
-    private void createApparelTable(Connection conn){
-        String query = """
-                CREATE TABLE Apparel (
-                    apparelId int AUTO_INCREMENT PRIMARY KEY,
-                    name VARCHAR(255),
-                    type VARCHAR(255),
-                    physicalDr int,
-                    energyDr int,
-                    radiationDr int,
-                    health int,
-                    weight int,
-                    cost int,
-                    rarity int
-                );
-                """;
-        executeQuery(conn, query, "Error creating the Apparel table");
-    }
-
     private void createApparelModTable(Connection conn){
         String query = """
                 CREATE TABLE ApparelMod (
-                    perkId int NOT NULL,
-                    apparelModId int AUTO_INCREMENT PRIMARY KEY,
+                    perkId INTEGER NOT NULL,
+                    apparelModId INTEGER PRIMARY KEY AUTOINCREMENT,
                     name VARCHAR(255),
-                    physicalDr int,
-                    energyDr int,
-                    radiationDr int,
-                    weight int,
-                    cost int,
+                    physicalDr INTEGER,
+                    energyDr INTEGER,
+                    radiationDr INTEGER,
+                    weight INTEGER,
+                    cost INTEGER,
                     FOREIGN KEY (perkId) REFERENCES Perk (perkId)
                 );
                 """;
@@ -152,14 +93,14 @@ public class DatabaseInitalizer{
     private void createAidTable(Connection conn){
         String query = """
                 CREATE TABLE Aid (
-                    aidId int AUTO_INCREMENT PRIMARY KEY,
+                    aidId INTEGER PRIMARY KEY AUTOINCREMENT,
                     name VARCHAR(255),
                     type VARCHAR(255),
-                    health int,
-                    radiationDamage int,
-                    weight int,
-                    cost int,
-                    rarity int
+                    health INTEGER,
+                    radiationDamage INTEGER,
+                    weight INTEGER,
+                    cost INTEGER,
+                    rarity INTEGER
                 );
                 """;
         executeQuery(conn, query, "Error creating the Aid table");
@@ -168,13 +109,13 @@ public class DatabaseInitalizer{
     private void createChemTable(Connection conn){
         String query = """
                 CREATE TABLE Chem (
-                    chemId int AUTO_INCREMENT PRIMARY KEY,
+                    chemId INTEGER PRIMARY KEY AUTOINCREMENT,
                     name VARCHAR(255),
                     duration VARCHAR(255),
-                    addictiveLevel int,
-                    weight int,
-                    cost int,
-                    rarity int
+                    addictiveLevel INTEGER,
+                    weight INTEGER,
+                    cost INTEGER,
+                    rarity INTEGER
                 );
                 """;
         executeQuery(conn, query, "Error creating the Chem table");
@@ -183,11 +124,11 @@ public class DatabaseInitalizer{
     private void createMiscTable(Connection conn){
         String query = """
                 CREATE TABLE Misc (
-                    miscId int AUTO_INCREMENT PRIMARY KEY,
+                    miscId INTEGER PRIMARY KEY AUTOINCREMENT,
                     name VARCHAR(255),
-                    weight int,
-                    cost int,
-                    rarity int
+                    weight INTEGER,
+                    cost INTEGER,
+                    rarity INTEGER
                 );
                 """;
         executeQuery(conn, query, "Error creating the Misc table");
@@ -196,7 +137,7 @@ public class DatabaseInitalizer{
     private void createEffectTable(Connection conn){
         String query = """
                 CREATE TABLE Effect (
-                    effectId int AUTO_INCREMENT PRIMARY KEY,
+                    effectId INTEGER PRIMARY KEY AUTOINCREMENT,
                     name VARCHAR(255),
                     type VARCHAR(255),
                     effect VARCHAR(1600)
@@ -208,7 +149,7 @@ public class DatabaseInitalizer{
     private void createArmourLocationTable(Connection conn){
         String query = """
                 CREATE TABLE ArmourLocation (
-                    armourLocationId int AUTO_INCREMENT PRIMARY KEY,
+                    armourLocationId INTEGER PRIMARY KEY AUTOINCREMENT,
                     name VARCHAR(255)
                 );
                 """;
@@ -223,9 +164,9 @@ public class DatabaseInitalizer{
      private void createWeaponEffectTable(Connection conn){
         String query = """
                 CREATE TABLE WeaponEffectM2M (
-                    weaponId int NOT NULL,
-                    effectId int NOT NULL,
-                    weaponEffectId int AUTO_INCREMENT PRIMARY KEY,
+                    weaponId INTEGER NOT NULL,
+                    effectId INTEGER NOT NULL,
+                    weaponEffectId INTEGER PRIMARY KEY AUTOINCREMENT,
                     FOREIGN KEY (weaponId) REFERENCES Weapon (weaponId),
                     FOREIGN KEY (effectId) REFERENCES Effect (effectId)
                 );
@@ -236,9 +177,9 @@ public class DatabaseInitalizer{
     private void createWeaponModEffectTable(Connection conn){
         String query = """
                 CREATE TABLE WeaponModEffectM2M (
-                    weaponModId int NOT NULL,
-                    effectId int NOT NULL,
-                    weaponModEffectId int AUTO_INCREMENT PRIMARY KEY,
+                    weaponModId INTEGER NOT NULL,
+                    effectId INTEGER NOT NULL,
+                    weaponModEffectId INTEGER PRIMARY KEY AUTOINCREMENT,
                     FOREIGN KEY (weaponModId) REFERENCES WeaponMod (weaponModId),
                     FOREIGN KEY (effectId) REFERENCES Effect (effectId)
                 );
@@ -249,9 +190,9 @@ public class DatabaseInitalizer{
     private void createApparelEffectTable(Connection conn){
         String query = """
                 CREATE TABLE ApparelEffectM2M (
-                    apparelId int NOT NULL,
-                    effectId int NOT NULL,
-                    apparelEffectId int AUTO_INCREMENT PRIMARY KEY,
+                    apparelId INTEGER NOT NULL,
+                    effectId INTEGER NOT NULL,
+                    apparelEffectId INTEGER PRIMARY KEY AUTOINCREMENT,
                     FOREIGN KEY (apparelId) REFERENCES Apparel (apparelId),
                     FOREIGN KEY (effectId) REFERENCES Effect (effectId)
                 );
@@ -262,9 +203,9 @@ public class DatabaseInitalizer{
     private void createArmourLocationApparelTable(Connection conn){
         String query = """
                 CREATE TABLE ArmourLocationApparelM2M (
-                    apparelId int NOT NULL,
-                    armourLocationId int NOT NULL,
-                    armourLocationApparelId int AUTO_INCREMENT PRIMARY KEY,
+                    apparelId INTEGER NOT NULL,
+                    armourLocationId INTEGER NOT NULL,
+                    armourLocationApparelId INTEGER PRIMARY KEY AUTOINCREMENT,
                     FOREIGN KEY (apparelId) REFERENCES Apparel (apparelId),
                     FOREIGN KEY (armourLocationId) REFERENCES ArmourLocation (armourLocationId)
                 );
@@ -275,9 +216,9 @@ public class DatabaseInitalizer{
     private void createApparelModEffectTable(Connection conn){
         String query = """
                 CREATE TABLE ApparelModEffectM2M (
-                    apparelModId int NOT NULL,
-                    effectId int NOT NULL,
-                    apparelModEffectId int AUTO_INCREMENT PRIMARY KEY,
+                    apparelModId INTEGER NOT NULL,
+                    effectId INTEGER NOT NULL,
+                    apparelModEffectId INTEGER PRIMARY KEY AUTOINCREMENT,
                     FOREIGN KEY (apparelModId) REFERENCES ApparelMod (apparelModId),
                     FOREIGN KEY (effectId) REFERENCES Effect (effectId)
                 );
@@ -288,9 +229,9 @@ public class DatabaseInitalizer{
     private void createAidEffectTable(Connection conn){
         String query = """
                 CREATE TABLE AidEffectM2M (
-                    aidId int NOT NULL,
-                    effectId int NOT NULL,
-                    aidEffectId int AUTO_INCREMENT PRIMARY KEY,
+                    aidId INTEGER NOT NULL,
+                    effectId INTEGER NOT NULL,
+                    aidEffectId INTEGER PRIMARY KEY AUTOINCREMENT,
                     FOREIGN KEY (aidId) REFERENCES Aid (aidId),
                     FOREIGN KEY (effectId) REFERENCES Effect (effectId)
                 );
@@ -301,9 +242,9 @@ public class DatabaseInitalizer{
     private void createChemEffectTable(Connection conn){
         String query = """
                 CREATE TABLE ChemEffectM2M (
-                    chemId int NOT NULL,
-                    effectId int NOT NULL,
-                    chemEffectId int AUTO_INCREMENT PRIMARY KEY,
+                    chemId INTEGER NOT NULL,
+                    effectId INTEGER NOT NULL,
+                    chemEffectId INTEGER PRIMARY KEY AUTOINCREMENT,
                     FOREIGN KEY (chemId) REFERENCES Chem (chemId),
                     FOREIGN KEY (effectId) REFERENCES Effect (effectId)
                 );
@@ -314,9 +255,9 @@ public class DatabaseInitalizer{
     private void createMiscEffectTable(Connection conn){
         String query = """
                 CREATE TABLE MiscEffectM2M (
-                    miscId int NOT NULL,
-                    effectId int NOT NULL,
-                    miscEffectId int AUTO_INCREMENT PRIMARY KEY,
+                    miscId INTEGER NOT NULL,
+                    effectId INTEGER NOT NULL,
+                    miscEffectId INTEGER PRIMARY KEY AUTOINCREMENT,
                     FOREIGN KEY (miscId) REFERENCES Misc (miscId),
                     FOREIGN KEY (effectId) REFERENCES Effect (effectId)
                 );

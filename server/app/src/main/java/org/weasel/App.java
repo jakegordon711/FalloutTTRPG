@@ -12,10 +12,9 @@ public class App {
         String dbName = "";
         if(args.length > 0){
             dbName = args[0];
-            new DatabaseInitalizer(dbName);
+            new DatabaseInitializer(dbName);
         }else{
-            new DatabaseInitalizer();
+            new DatabaseInitializer();
         }
-        System.out.println(new App().getGreeting());
     }
 }

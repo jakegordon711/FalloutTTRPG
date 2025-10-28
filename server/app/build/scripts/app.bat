@@ -70,11 +70,11 @@ goto fail
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\app.jar;%APP_HOME%\lib\guava-33.4.6-jre.jar;%APP_HOME%\lib\sqlite-jdbc-3.50.3.0.jar;%APP_HOME%\lib\failureaccess-1.0.3.jar;%APP_HOME%\lib\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;%APP_HOME%\lib\jspecify-1.0.0.jar;%APP_HOME%\lib\error_prone_annotations-2.36.0.jar;%APP_HOME%\lib\j2objc-annotations-3.0.0.jar
+set CLASSPATH=%APP_HOME%\lib\app.jar;%APP_HOME%\lib\guava-33.4.6-jre.jar;%APP_HOME%\lib\sqlite-jdbc-3.50.3.0.jar;%APP_HOME%\lib\poi-ooxml-5.4.1.jar;%APP_HOME%\lib\failureaccess-1.0.3.jar;%APP_HOME%\lib\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;%APP_HOME%\lib\jspecify-1.0.0.jar;%APP_HOME%\lib\error_prone_annotations-2.36.0.jar;%APP_HOME%\lib\j2objc-annotations-3.0.0.jar;%APP_HOME%\lib\poi-5.4.1.jar;%APP_HOME%\lib\poi-ooxml-lite-5.4.1.jar;%APP_HOME%\lib\xmlbeans-5.3.0.jar;%APP_HOME%\lib\commons-compress-1.27.1.jar;%APP_HOME%\lib\commons-io-2.18.0.jar;%APP_HOME%\lib\curvesapi-1.08.jar;%APP_HOME%\lib\log4j-api-2.24.3.jar;%APP_HOME%\lib\commons-collections4-4.4.jar;%APP_HOME%\lib\commons-codec-1.18.0.jar;%APP_HOME%\lib\commons-math3-3.6.1.jar;%APP_HOME%\lib\SparseBitSet-1.3.jar;%APP_HOME%\lib\commons-lang3-3.16.0.jar
 
 
 @rem Execute app
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %APP_OPTS%  -classpath "%CLASSPATH%" org.example.App %*
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %APP_OPTS%  -classpath "%CLASSPATH%" org.weasel.App %*
 
 :end
 @rem End local scope for the variables with windows NT shell
